@@ -25,7 +25,7 @@ Composition Over Inheritance:
 
 
 class Person {
-    constructor(name, age) { // constructor is a keyword.
+    constructor(name, age) { // constructor is a keyword.  
         this.name = name;
         this.age = age;
     }
@@ -114,7 +114,7 @@ let b1 = new Car('red', '5000', 'Maruti', 'Sedan');
 // let cq1 = new Motorcycle('500', "Maruti", "Sports card");
 // cq1.hearMe()
 
-
+//#OOPSQ1
 class aEmitter{
     constructor(){
         this.obj = {}; // you can only declare a public variable inside a function constructor
@@ -179,14 +179,24 @@ const cart4 = new Cart("Toyota", "Camry", 2022);
 console.log(cart1.displayNewInfo()); // Output: Car: Ford Mustang (2023)
 console.log(cart2.displayNewInfo()); // Output: Car: Toyota Camry (2022)
 
-
+//#StaticQ1
+class JS1{
+    static counter = 0;
+    constructor(){
+        JS1.counter++;
+        console.log("Invoked", JS1.counter, " times");
+    }
+}
+let obj1 = new JS1();
+let obj2 = new JS1();
+let obj3 = new JS1();
 
     /***
      * 1. What is the only prefixes allowed in a class methods
      * 2. What separates one function declaration to another ?
      * 3. Can we access private variables in it's inherited class ?
      * 4. How to call static function ? Can we use this keyword ?
-     * 
+     * 5. Abstarct classes vs interface
      * 
      *
      * 
@@ -197,5 +207,5 @@ console.log(cart2.displayNewInfo()); // Output: Car: Toyota Camry (2022)
      * 2. No comma, no anything, nothing
      * 3.  No. 
      * 4. Only with the className.[FUNCTION_NAME], yes you can use the this keyword only if  when calling function is also static
-     * 5. Abstarct classes vs interface
+     * 
     */
