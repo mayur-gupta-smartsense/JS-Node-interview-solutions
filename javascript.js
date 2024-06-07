@@ -1,4 +1,5 @@
 /**
+ * #Re-Declare1
  * Same question asked twice in 2 different interviews:
  * what will be the output, try changing 2 'var's into 'let'
  * and now first var into let and vice-versa, how and why are the results changing ?
