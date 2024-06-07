@@ -1,6 +1,7 @@
-// What is the output of the program and explain it using queueus.
+//
 /**
- *
+ * #Queues1
+ *What is the output of the program and explain it using queueus.
  * Something to do with Node js queues.
  *
  */
