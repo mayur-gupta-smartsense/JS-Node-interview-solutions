@@ -37,3 +37,22 @@ req.on("error", (e) => {
 // Write data to the request body
 req.write(postData);
 req.end();
+
+// better method to make a POST request
+// run `node index.js` in the terminal
+
+const axios = require("axios");
+
+const postData1 = {
+	// your data here
+	key: "value",
+};
+
+axios
+	.post("https://freehainna.free.beeceptor.com", postData1)
+	.then((res) => {
+		console.log("success------>>>", res);
+	})
+	.catch((err) => {
+		console.log(err);
+	});
